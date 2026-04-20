@@ -24,12 +24,12 @@ Port of **[pi-autoresearch](https://github.com/davebcn87/pi-autoresearch)** for 
 - [npm packages](#npm-packages)
 - [Requirements](#requirements)
 - [Build (from a clone)](#build-from-a-clone)
+- [Cursor rule](#cursor-rule)
 - [Install for Cursor](#install-for-cursor)
 - [Install for VS Code](#install-for-vs-code)
-- [Extension (optional)](#extension-optional)
+- [Skills](#skills)
+- [Extension](#extension)
 - [Screenshot](#screenshot)
-- [Skills (optional)](#skills-optional)
-- [Cursor rule (optional)](#cursor-rule-optional)
 - [Example: faster tests](#example-faster-tests)
 - [Configuration](#configuration)
 - [Develop this repository](#develop-this-repository)
@@ -124,6 +124,12 @@ The JSON examples below use `npx -y @ergenekonyigit/cursor-autoresearch-mcp-serv
 
 ---
 
+## Cursor rule
+
+[`.cursor/rules/autoresearch-active.mdc`](.cursor/rules/autoresearch-active.mdc) nudges the agent to use MCP tools and keep `autoresearch.md` in sync when `autoresearch.jsonl` exists. Copy or symlink into another repo’s `.cursor/rules/` if useful.
+
+---
+
 ## Install for Cursor
 
 ### One-shot bootstrap
@@ -207,7 +213,20 @@ Reference: [MCP configuration (VS Code)](https://code.visualstudio.com/docs/copi
 
 ---
 
-## Extension (optional)
+## Skills
+
+If you did not use bootstrap or `pnpm install:cursor`:
+
+```bash
+ln -sfn "$PWD/skills/autoresearch-create" ~/.agents/skills/autoresearch-create
+ln -sfn "$PWD/skills/autoresearch-finalize" ~/.agents/skills/autoresearch-finalize
+```
+
+You can also symlink into `.cursor/skills/` (e.g. `autoresearch-create` → `../../skills/autoresearch-create`) for workspace-only discovery. Nothing in the build requires these symlinks.
+
+---
+
+## Extension
 
 Install from Visual Studio Marketplace:
 
@@ -226,25 +245,6 @@ pnpm package:extension
 ## Screenshot
 
 ![Autoresearch dashboard screenshot](packages/vscode-extension/images/screenshot.jpg)
-
----
-
-## Skills (optional)
-
-If you did not use bootstrap or `pnpm install:cursor`:
-
-```bash
-ln -sfn "$PWD/skills/autoresearch-create" ~/.agents/skills/autoresearch-create
-ln -sfn "$PWD/skills/autoresearch-finalize" ~/.agents/skills/autoresearch-finalize
-```
-
-You can also symlink into `.cursor/skills/` (e.g. `autoresearch-create` → `../../skills/autoresearch-create`) for workspace-only discovery. Nothing in the build requires these symlinks.
-
----
-
-## Cursor rule (optional)
-
-[`.cursor/rules/autoresearch-active.mdc`](.cursor/rules/autoresearch-active.mdc) nudges the agent to use MCP tools and keep `autoresearch.md` in sync when `autoresearch.jsonl` exists. Copy or symlink into another repo’s `.cursor/rules/` if useful.
 
 ---
 
