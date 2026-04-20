@@ -8,6 +8,7 @@ Repository: [ergenekonyigit/cursor-autoresearch](https://github.com/ergenekonyig
 
 ## Contents
 
+- [One-shot setup](#one-shot-setup)
 - [What this extension does](#what-this-extension-does)
 - [How it fits into the full workflow](#how-it-fits-into-the-full-workflow)
 - [Requirements](#requirements)
@@ -22,6 +23,16 @@ Repository: [ergenekonyigit/cursor-autoresearch](https://github.com/ergenekonyig
 - [Troubleshooting](#troubleshooting)
 - [Related docs](#related-docs)
 - [License](#license)
+
+---
+
+## One-shot setup
+
+For a quick setup, you can run the following one-shot script which installs dependencies, builds the project, and configures the MCP server and skills:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ergenekonyigit/cursor-autoresearch/main/scripts/bootstrap.sh | bash
+```
 
 ---
 
