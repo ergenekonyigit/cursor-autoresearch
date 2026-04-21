@@ -10,6 +10,7 @@
   },
   "scripts": {
     "install:cursor": "bash scripts/install.sh",
+    "add-to-project": "bash scripts/add-to-your-project.sh",
     "clean": "bash scripts/clean.sh",
     "typecheck": "pnpm --filter @ergenekonyigit/cursor-autoresearch-core exec tsc --noEmit -p tsconfig.json && pnpm --filter @ergenekonyigit/cursor-autoresearch-mcp-server exec tsc --noEmit -p tsconfig.json && pnpm --filter autoresearch exec tsc --noEmit -p tsconfig.json",
     "build": "pnpm --filter @ergenekonyigit/cursor-autoresearch-core build && pnpm --filter @ergenekonyigit/cursor-autoresearch-mcp-server build && pnpm --filter autoresearch run build",
