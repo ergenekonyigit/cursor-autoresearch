@@ -24,11 +24,11 @@ importers:
   packages/core:
     devDependencies:
       '@types/node':
-        specifier: ^25.6.0
-        version: 25.6.0
+        specifier: ^25.6.1
+        version: 25.6.1
       vitest:
         specifier: ^4.1.5
-        version: 4.1.5(@types/node@25.6.0)(vite@7.3.2(@types/node@25.6.0))
+        version: 4.1.5(@types/node@25.6.1)(vite@7.3.2(@types/node@25.6.1))
 
   packages/mcp-server:
     dependencies:
@@ -40,11 +40,11 @@ importers:
         version: 1.29.0(zod@4.3.6)
     devDependencies:
       '@types/node':
-        specifier: ^25.6.0
-        version: 25.6.0
+        specifier: ^25.6.1
+        version: 25.6.1
       vitest:
         specifier: ^4.1.5
-        version: 4.1.5(@types/node@25.6.0)(vite@7.3.2(@types/node@25.6.0))
+        version: 4.1.5(@types/node@25.6.1)(vite@7.3.2(@types/node@25.6.1))
 
   packages/vscode-extension:
     dependencies:
@@ -53,8 +53,8 @@ importers:
         version: link:../core
     devDependencies:
       '@types/node':
-        specifier: ^25.6.0
-        version: 25.6.0
+        specifier: ^25.6.1
+        version: 25.6.1
       '@types/vscode':
         specifier: ^1.118.0
         version: 1.118.0
@@ -69,7 +69,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: ^4.1.5
-        version: 4.1.5(@types/node@25.6.0)(vite@7.3.2(@types/node@25.6.0))
+        version: 4.1.5(@types/node@25.6.1)(vite@7.3.2(@types/node@25.6.1))
 
 packages:
 
@@ -757,8 +757,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@25.6.0':
-    resolution: {integrity: sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ==}
+  '@types/node@25.6.1':
+    resolution: {integrity: sha512-coJCN8O1q4AGyyqCAUSP06P+SrMTu18BkEj3NVAK07q6QUneD2wzj3CLv9+yP+BMeZQlMvneXqqvDe3w+xcq7g==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2956,7 +2956,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@25.6.0':
+  '@types/node@25.6.1':
     dependencies:
       undici-types: 7.19.2
 
@@ -3074,13 +3074,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.5(vite@7.3.2(@types/node@25.6.0))':
+  '@vitest/mocker@4.1.5(vite@7.3.2(@types/node@25.6.1))':
     dependencies:
       '@vitest/spy': 4.1.5
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.2(@types/node@25.6.0)
+      vite: 7.3.2(@types/node@25.6.1)
 
   '@vitest/pretty-format@4.1.5':
     dependencies:
@@ -4669,7 +4669,7 @@ snapshots:
 
   version-range@4.15.0: {}
 
-  vite@7.3.2(@types/node@25.6.0):
+  vite@7.3.2(@types/node@25.6.1):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -4678,13 +4678,13 @@ snapshots:
       rollup: 4.60.3
       tinyglobby: 0.2.16
     optionalDependencies:
-      '@types/node': 25.6.0
+      '@types/node': 25.6.1
       fsevents: 2.3.3
 
-  vitest@4.1.5(@types/node@25.6.0)(vite@7.3.2(@types/node@25.6.0)):
+  vitest@4.1.5(@types/node@25.6.1)(vite@7.3.2(@types/node@25.6.1)):
     dependencies:
       '@vitest/expect': 4.1.5
-      '@vitest/mocker': 4.1.5(vite@7.3.2(@types/node@25.6.0))
+      '@vitest/mocker': 4.1.5(vite@7.3.2(@types/node@25.6.1))
       '@vitest/pretty-format': 4.1.5
       '@vitest/runner': 4.1.5
       '@vitest/snapshot': 4.1.5
@@ -4701,10 +4701,10 @@ snapshots:
       tinyexec: 1.1.1
       tinyglobby: 0.2.16
       tinyrainbow: 3.1.0
-      vite: 7.3.2(@types/node@25.6.0)
+      vite: 7.3.2(@types/node@25.6.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 25.6.0
+      '@types/node': 25.6.1
     transitivePeerDependencies:
       - msw
 
